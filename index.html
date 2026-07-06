@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karak Chai House | Premium Cafe</title>
+    <style>
+        /* --- CSS STYLES (UI & Design) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #fcf8f2;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8B4513; /* Chai Brown Color */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #D2691E;
+        }
+
+        .btn-order {
+            background-color: #8B4513;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-order:hover {
+            background-color: #D2691E;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+            max-width: 600px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 10%;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .about h2 {
+            color: #8B4513;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 80px 10%;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            color: #8B4513;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item h3 {
+            margin: 15px 0 10px 0;
+            color: #333;
+        }
+
+        .price {
+            color: #D2691E;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c1a11;
+            color: #f5eae0;
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer-box {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-box h4 {
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; text-align: center; }
+            .hero h1 { font-size: 32px; }
+            .footer-content { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">☕ Karak Chai House</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="tel:+923001234567" class="btn-order">Call & Order</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Asli Karak Chai Ka Maza</h1>
+        <p>Har ghoont mein taazgi aur sukoon. Hamari makhsoos blend se bani chai jo aapka din bana de.</p>
+        <a href="#menu" class="btn-order" style="padding: 15px 30px; font-size: 18px;">Hamara Menu Dekhein</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>Hum Kaun Hain?</h2>
+        <p>Hum sirf chai nahi bechte, hum thakan ka ilaaj bechte hain! Hamari hotel par aapko milegi bilkul saaf-suthre mahool mein banti hui makhsoos matka chai, elaichi chai aur crispy parathay.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Hamara Mashhoor Menu</h2>
+        <div class="menu-grid">
+            
+            <!-- Item 1 -->
+            <div class="menu-item">
+                <h3>Special Karak Chai</h3>
+                <p>Doodh patti ka behtareen aur khalis zaiqa.</p>
+                <p class="price">Rs. 80</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item">
+                <h3>Matka Dum Chai</h3>
+                <p>Mitti ke bartan mein paki khushboodar chai.</p>
+                <p class="price">Rs. 120</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-item">
+                <h3>Elaichi Shahi Chai</h3>
+                <p>Elaichi aur zafraan ke makhsoos lutf ke saath.</p>
+                <p class="price">Rs. 100</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="menu-item">
+                <h3>Lachha Paratha</h3>
+                <p>Chai ke saath khasta aur crispy lachha paratha.</p>
+                <p class="price">Rs. 90</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-box">
+                <h4>Timing</h4>
+                <p>24 Hours / 7 Days Open</p>
+            </div>
+            <div class="footer-box">
+                <h4>Address</h4>
+                <p>Shop #4, Main Commercial Area, Karachi, Pakistan</p>
+            </div>
+            <div class="footer-box">
+                <h4>Rabta Karein</h4>
+                <p>Phone: +92 300 1234567</p>
+                <p>Email: info@karakchai.com</p>
+            </div>
+        </div>
+        <p>&copy; 2026 Karak Chai House. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
