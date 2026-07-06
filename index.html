@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,11 +22,11 @@
         /* Navigation Bar */
         header {
             background-color: #ffffff;
-            padding: 20px 10%;
+            padding: 18px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -57,17 +57,18 @@
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.15s;
         }
 
         .btn-order:hover {
             background-color: #D2691E;
+            transform: translateY(-2px);
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://unsplash.com') no-repeat center center/cover;
-            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1650&q=80') no-repeat center center/cover;
+            height: 72vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -78,76 +79,77 @@
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
+            font-size: 44px;
+            margin-bottom: 12px;
+            letter-spacing: 0.4px;
         }
 
         .hero p {
-            font-size: 20px;
-            margin-bottom: 25px;
-            max-width: 600px;
+            font-size: 18px;
+            margin-bottom: 22px;
+            max-width: 700px;
         }
 
         /* About Section */
         .about {
-            padding: 80px 10%;
+            padding: 70px 8%;
             text-align: center;
             background-color: #ffffff;
         }
 
         .about h2 {
             color: #8B4513;
-            font-size: 32px;
-            margin-bottom: 20px;
+            font-size: 30px;
+            margin-bottom: 18px;
         }
 
         /* Menu Section */
         .menu-section {
-            padding: 80px 10%;
+            padding: 70px 8%;
         }
 
         .menu-section h2 {
             text-align: center;
             color: #8B4513;
-            font-size: 32px;
-            margin-bottom: 40px;
+            font-size: 30px;
+            margin-bottom: 36px;
         }
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
         }
 
         .menu-item {
             background: white;
-            padding: 20px;
+            padding: 18px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
             text-align: center;
             transition: transform 0.3s;
         }
 
         .menu-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
         }
 
         .menu-item h3 {
-            margin: 15px 0 10px 0;
+            margin: 12px 0 8px 0;
             color: #333;
         }
 
         .price {
             color: #D2691E;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         /* Footer */
         footer {
             background-color: #2c1a11;
             color: #f5eae0;
-            padding: 40px 10%;
+            padding: 36px 8%;
             text-align: center;
         }
 
@@ -155,24 +157,26 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .footer-box {
             flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
+            min-width: 220px;
+            margin-bottom: 18px;
+            text-align: left;
         }
 
         .footer-box h4 {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #fff;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            header { flex-direction: column; gap: 15px; text-align: center; }
-            .hero h1 { font-size: 32px; }
+            header { flex-direction: column; gap: 12px; text-align: center; padding: 16px 6%; }
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 16px; }
             .footer-content { flex-direction: column; }
         }
     </style>
@@ -188,52 +192,52 @@
             <a href="#menu">Menu</a>
             <a href="#contact">Contact</a>
         </nav>
-        <a href="tel:+923001234567" class="btn-order">Call & Order</a>
+        <a href="tel:+923001234567" class="btn-order">Call to Order</a>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <h1>Asli Karak Chai Ka Maza</h1>
-        <p>Har ghoont mein taazgi aur sukoon. Hamari makhsoos blend se bani chai jo aapka din bana de.</p>
-        <a href="#menu" class="btn-order" style="padding: 15px 30px; font-size: 18px;">Hamara Menu Dekhein</a>
+        <h1>Experience Authentic Karak Chai</h1>
+        <p>Every sip brings freshness and calm. Our special tea blend is crafted to brighten your day.</p>
+        <a href="#menu" class="btn-order" style="padding: 14px 28px; font-size: 18px;">View Our Menu</a>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <h2>Hum Kaun Hain?</h2>
-        <p>Hum sirf chai nahi bechte, hum thakan ka ilaaj bechte hain! Hamari hotel par aapko milegi bilkul saaf-suthre mahool mein banti hui makhsoos matka chai, elaichi chai aur crispy parathay.</p>
+        <h2>Who Are We?</h2>
+        <p>We don't just sell tea — we offer a remedy for tiredness. Visit us for a clean, welcoming space and enjoy specialties like matka-brewed tea, cardamom chai, and crispy parathas.</p>
     </section>
 
     <!-- Menu Section -->
     <section class="menu-section" id="menu">
-        <h2>Hamara Mashhoor Menu</h2>
+        <h2>Our Popular Menu</h2>
         <div class="menu-grid">
             
             <!-- Item 1 -->
             <div class="menu-item">
                 <h3>Special Karak Chai</h3>
-                <p>Doodh patti ka behtareen aur khalis zaiqa.</p>
+                <p>A rich milk-and-tea brew with an authentic taste.</p>
                 <p class="price">Rs. 80</p>
             </div>
 
             <!-- Item 2 -->
             <div class="menu-item">
                 <h3>Matka Dum Chai</h3>
-                <p>Mitti ke bartan mein paki khushboodar chai.</p>
+                <p>Fragrant tea slow-cooked in an earthen pot for deeper flavor.</p>
                 <p class="price">Rs. 120</p>
             </div>
 
             <!-- Item 3 -->
             <div class="menu-item">
-                <h3>Elaichi Shahi Chai</h3>
-                <p>Elaichi aur zafraan ke makhsoos lutf ke saath.</p>
+                <h3>Cardamom Royal Chai</h3>
+                <p>A royal blend with cardamom and a hint of saffron.</p>
                 <p class="price">Rs. 100</p>
             </div>
 
             <!-- Item 4 -->
             <div class="menu-item">
-                <h3>Lachha Paratha</h3>
-                <p>Chai ke saath khasta aur crispy lachha paratha.</p>
+                <h3>Layered Paratha</h3>
+                <p>Crispy, flaky layered paratha — perfect with tea.</p>
                 <p class="price">Rs. 90</p>
             </div>
 
@@ -244,15 +248,15 @@
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-box">
-                <h4>Timing</h4>
-                <p>24 Hours / 7 Days Open</p>
+                <h4>Hours</h4>
+                <p>Open 24/7</p>
             </div>
             <div class="footer-box">
                 <h4>Address</h4>
                 <p>Shop #4, Main Commercial Area, Karachi, Pakistan</p>
             </div>
             <div class="footer-box">
-                <h4>Rabta Karein</h4>
+                <h4>Get in Touch</h4>
                 <p>Phone: +92 300 1234567</p>
                 <p>Email: info@karakchai.com</p>
             </div>
